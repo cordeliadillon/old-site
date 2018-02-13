@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap:http://www.cordeliadillon.com/site_map.xml

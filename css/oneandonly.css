@@ -1,0 +1,167 @@
+@import 'https://fonts.googleapis.com/css?family=Hind+Guntur';
+
+@font-face {
+font-family: CordeliaBold;
+src: url(../fonts/CordeliaBold.ttf);
+}
+
+@font-face {
+font-family: CordeliaLight;
+src: url(../fonts/CordeliaLight.ttf);
+}
+
+body {
+	font-family: 'Hind Guntur', Helvetica, Lucida Grande, sans-serif;
+	font-size: 1.7em;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+.header {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h1 {
+	font-family: "CordeliaBold", Helvetica, Lucida Grande, sans-serif;
+	font-size: 70px;
+}
+
+h2 {
+	font-family: "CordeliaBold", Helvetica, Lucida Grande, sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	padding: 10px 0px;
+}
+
+h3 {
+	font-family: "CordeliaBold", Helvetica, Lucida Grande, sans-serif;
+	font-size: 30px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#about {
+	margin-bottom: 100px;
+}
+
+#photoblogs, #comicblogs, #everythingelse {
+	margin-bottom: 50px;
+}
+
+.thumbnail {
+	margin-bottom: 50px;
+	border:none;
+}
+
+.title {
+	padding: 24px 9px 0px 9px;
+}
+
+.description {
+	padding: 0px 9px 9px 9px;
+}
+
+.thumbnail a, .thumbnail a:hover, .thumbnail a:visited {
+	text-decoration: none;
+	/*color: #FF0000;*/
+}
+
+img {
+	border-radius:2px;
+}
+
+a, .thumbnail .description a, .thumbnail .description a:hover, .thumbnail .description a:visited {
+	color: #0b71ca;
+}
+
+ul.links {
+	list-style-type: none;
+	padding: 0;
+        display: block;
+}
+
+ul.links li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-top: 15px;
+        padding-bottom: 10px;
+}
+
+ul.links li a {
+	border-radius: 3px;
+	padding: 8px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+li.email a {
+	background-color: #009966;
+}
+
+li.spotify a {
+	background-color: #7ab800;
+}
+
+li.twitter a {
+	background-color: #00ACED;
+}
+
+li.linkedin a {
+	background-color: #0077b5;
+}
+
+li.facebook a {
+	background-color: #3b5998;
+}
+
+li.lastfm a {
+	background-color: #D51007;
+}
+
+li.googleplus a {
+	background-color: #CD3C2A;
+}
+
+li.medium a {
+	background-color: black;
+}
+
+li.tumblr a {
+	background-color: #2c4762;
+}
+
+li.youtube a {
+	background-color: #cc181e;
+}
+
+li.flickr a {
+	background-color: #ff0084;
+}
+
+li.instagram a {
+	background-color: #06365f;
+}
+
+.footer {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.videowrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

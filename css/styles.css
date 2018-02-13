@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Hind+Guntur:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  font-family: 'Hind Guntur', Helvetica, sans-serif;
+  position: relative;
+}
+
+nav, h1, h2, h3, h4 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+a {
+  color: #e00000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/** most anchors **/
+a:hover, a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/** button anchors **/
+a.button:hover, a.button:focus {
+  text-decoration: none;
+  outline: initial;
+}
+
+.social-media img {
+  width: 60px;
+  height: auto;
+}
+
+header img {
+  border-bottom: 4px solid transparent;
+}
+
+
+nav a,
+.social-media a {
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+}
+
+header a:focus img,
+nav a:hover, nav a:focus,
+.social-media a:hover, .social-media a:focus {
+  border-bottom: 4px solid #e00000;
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  color: #e00000;
+  text-decoration: none;
+}
+
+.selected a {
+  border-bottom: 4px solid black;
+}
+
+.border--grey {
+  border-color: #dadada;
+}
+
+.image--link {
+  outline: 2px solid #dadada;
+}
+
+.image--link.image--call {
+  outline: 2px transparent;
+}
+
+a:focus .image--link {
+  outline: 4px solid #e00000;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

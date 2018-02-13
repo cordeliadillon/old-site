@@ -1,0 +1,130 @@
+body {
+    margin: 100px 0 0 0;
+
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+div {
+    text-decoration: none;
+}
+
+.cat img {
+    width: 100%;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 5;
+}
+
+header {
+    background-color: #650786;
+    width: 100%;
+}
+
+.shortcuts {
+    background-color: #D5F5FD;
+    width: 100%;
+    text-align: center;
+}
+
+.shortcuts * {
+    display: inline-block;
+}
+
+.shortcuts ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.shortcuts li {
+    padding: 5px 10px;
+}
+
+.shortcuts h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+}
+
+#hamburger {
+    cursor: pointer;
+    float: right;
+    color: white;
+    padding: 10px;
+    font-size: 36px;
+}
+
+#rum-tum {
+    float: right;
+    margin: 30px;
+    width: 30%;
+}
+
+.more-link {
+    float: right;
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.non-label {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hidden-text {
+  position: absolute;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  z-index: -1000;
+}
+
+footer {
+    text-align: center;
+    background-color: #F3F3F3;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    padding: 20px;
+}

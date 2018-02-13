@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+    
+    <meta name="description" content="Cordelia McGee-Tubb is a creative person with a website.">
+    <meta name="author" content="Cordelia McGee-Tubb">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cordelia | Talks</title>
+    <link rel="stylesheet" href="../css/tachyons.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <header class="mw8 center tc">
+      <a href="../">
+        <h1 class="tracked b mt4 mb2 tc">
+          <img class="w-80" src="../images/cordelia--name.png" alt="Cordelia McGee-Tubb"/>
+        </h1>
+      </a>
+    </header>
+
+    <nav class="tc pb3">
+      <ul class="list b f3 ma0 pa0 tracked ttu">
+        <li class="dib-ns mr4-ns mb2"><a href="http://www.cordeliadillon.com/about/">About</a></li>
+        <li class="dib-ns mr4-ns mb2"><a href="http://www.cordeliadillon.com/comics/">Comics</a></li>
+        <li class="dib-ns mr4-ns mb2"><a href="http://www.cordeliadillon.com/technology/">Tech</a></li>
+        <li class="dib-ns mr4-ns mb2">Talks</li>
+        <li class="dib-ns mb2"><a href="http://www.cordeliadillon.com/etcetera/">Etc.</a></li>
+      </ul>
+    </nav>
+
+    <main class="mw8 center pv3 ph4 lh-copy" ng-app="talks" ng-controller="TalksController">
+      <div class="cf">
+        <section class="fr w-100 w-50-ns pl4-ns ng-cloak" ng-cloak>
+          <h2 class="f3 mb0">Upcoming Talks</h2>
+          <p ng-if="upcomingTalks.length == 0">
+            No upcoming talks scheduled!
+          </p>
+          <ul class="list pa0 ma0 cf">
+            <li class="" ng-repeat="talk in upcomingTalks">
+              <h3 class="mb0 f4" id="{{talk.id}}">{{talk.title}}</h3>
+              <p class="mv0 f4">
+                {{talk.eventDate}},
+                <a ng-if="talk.eventHref" href="{{talk.eventHref}}">{{talk.eventName}}</a>
+                <span ng-if="!talk.eventHref">{{talk.eventName}}</span>
+              </p>
+              <p class="mv0">{{talk.blurb}}</p>
+              <p ng-if="talk.themeString" class="mv0">
+               <!--  <b>Themes:</b>  -->
+                {{talk.themeString}}
+              </p>
+              <p ng-if="talk.links" class="mv0">
+                <!-- <b>Themes:</b> -->
+                <span ng-repeat="link in talk.links">
+                  <span class="ph1 b" ng-if="$index != 0">&middot;</span>
+                  <a href="{{link.href}}" aria-describedby="{{talk.id}}">{{link.name}}</a>
+                </span>
+              </p>
+            </li>
+          </ul>
+
+          <h2 class="mt4 mb0">Past Talks</h2>
+          <ul class="list pa0 ma0 cf">
+            <li class="" ng-repeat="talk in pastTalks">
+              <h3 class="mb0 f4" id="{{talk.id}}">{{talk.title}}</h3>
+              <p class="mv0 f4">
+                {{talk.eventDate}},
+                <a ng-if="talk.eventHref" href="{{talk.eventHref}}">{{talk.eventName}}</a>
+                <span ng-if="!talk.eventHref">{{talk.eventName}}</span>
+              </p>
+              <p class="mv0">{{talk.blurb}}</p>
+              <p ng-if="talk.themeString" class="mv0">
+               <!--  <b>Themes:</b>  -->
+                {{talk.themeString}}
+              </p>
+              <p ng-if="talk.links" class="mv0">
+                <!-- <b>Themes:</b> -->
+                <span ng-repeat="link in talk.links">
+                  <span class="ph1 b" ng-if="$index != 0">&middot;</span>
+                  <a href="{{link.href}}" aria-describedby="{{talk.id}}">{{link.name}}</a>
+                </span>
+              </p>
+            </li>
+          </ul>
+        
+        </section>
+        
+        <section class="fr w-100 w-50-ns pr4-ns">
+          <img class="w-100" src="public-speaking.jpg" alt="Illustration of Cordelia pointing at a projector screen that says, 'Public Speaking'" />
+          
+          <h2 class="mt0">Contact Me</h2>
+          <p>I love doing tech talks on accessibility, digital literacy, and the intersection of comics and inclusive design. Want me to speak at your conference or to your team? Send a message to <b>cordelia</b> at <b>cordeliadillon</b> dot <b>com</b> and I'll get back to you as soon as I can.</p>
+
+
+	   <div class="ng-cloak" ng-cloak>
+	       <h2 class="mt4">Publications</h2>
+	       <p class="mb0">I occasionally write and/or draw things for publications! Here are a few blog posts and articles from the past years:</p>
+	       <ul class="list pa0 ma0 cf">
+	         <li ng-repeat="post in features">
+	           <h3 class="mb0">
+	             <a ng-if="post.href" href="{{post.href}}">{{post.title}}</a>
+	           </h3>
+	           <p class="mv0">
+	             {{post.date}} &middot; {{post.role}} <span ng-if="post.publication">&middot;  {{post.publication}}</span>
+	           </p>
+	         </li>
+	       </ul>
+	 </div>
+
+          <!--
+          <h2>Need a bio?</h2>
+          <p>Cordelia McGee-Tubb is a developer, designer, and cartoonist focused on making the web better for everyone. She is a currently working on web accessibility at Dropbox. An advocate for digital literacy, Cordelia teaches basic computer and internet skills to senior citizens. In her spare time, she draws autobiographical comics and collects hats shaped like food.</p>
+
+          <h2>Need a photo?</h2>
+          <p>My preferred avatar is this illustrated self portrait:</p>
+          <img class="w-100" src="cordelia-drawn.jpg" alt="illustrated headshot of Cordelia"/>
+          <p>But if you need a real photo, here's one <a href="https://www.facebook.com/Tyler-Driscoll-Photography-321099929600/" target="_blank">Tyler</a> took when we were walking the perimeter of San Francisco:</p>
+          <img class="w-100" src="cordelia-bright.jpg" alt="Cordelia sitting in a pink chair against a green background, holding a speech balloon sign that says 'Cheers'"/>-->
+               
+        </section>
+      </div>
+      
+      <aside class="pt5 tc social-media">
+        <a class="dib p0 mr2" href="https://www.twitter.com/cordeliadillon" target="_blank" title="@cordeliadillon on Twitter">
+          <img src="../images/s--twitter.png" alt="Twitter"/>
+        </a>
+        <a class="dib p0 mr2" href="https://www.instagram.com/cordeliadillon/" target="_blank" title="@cordeliadillon on Instagram">
+          <img src="../images/s--instagram.png" alt="Instagram"/>
+        </a>
+        <a class="dib p0 mr2" href="https://www.linkedin.com/in/cordeliamcgeetubb" target="_blank" title="Cordelia on LinkedIn">
+          <img src="../images/s--linkedin.png" alt="LinkedIn"/>
+        </a>
+        <a class="dib p0 mr2" href="http://tinyletter.com/cordeliadillon" target="_blank" title="Cordelia's comics newsletter">
+          <img src="../images/s--newsletter.png" alt="Newsletter"/>
+        </a>
+        <a class="dib p0" href="http://echothroughthefog.tumblr.com" target="_blank" title="Echo Through the Fog on Tumblr">
+          <img src="../images/s--tumblr.png" alt="Tumblr"/>
+        </a>
+      </aside>
+    </main>
+
+    <footer class="tc pa4">
+      &copy; Cordelia McGee-Tubb 2017
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Hind Guntur', 'Montserrat']
+        },
+        custom: {
+          families: ['Cordelia Handwriting']
+        }
+      });
+    </script>
+    <script src="angular.min.js"></script>
+    <script src="data.js"></script>
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10657781-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    </script>
+  </body>
+</html>

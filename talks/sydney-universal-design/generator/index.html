@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scenario Generator</title>
+    <link rel="stylesheet" type="text/css" href="../css/salesforce-lightning-design-system.min.css"/>
+  </head>
+  <body>
+    <main class="slds-p-around_large" style="max-width: 500px; margin: 0 auto;" ng-app="generator" ng-controller="GeneratorController">
+        <div class="slds-text-align_center">
+            <h1 class="slds-text-heading_large slds-text-align_center">Product Idea Generator</h1>
+
+            <button class="slds-button slds-button_brand slds-m-vertical_large slds-text-align_center" ng-click="generateScenario()">Generate New Product</button>
+        </div>
+        <div role="status" aria-atomic="true">
+            <div ng-if="scenario" ng-cloak>
+                <h2 class="slds-text-heading_medium slds-p-vertical_medium" ng-cloak>{{scenario.overview}}</h2>
+                <p ng-cloak>{{scenario.feature}}</p>
+                <ul ng-if="scenario.requirements" class="slds-list_dotted slds-p_around_medium">
+                    <li ng-repeat="requirement in scenario.requirements">
+                        {{requirement}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="http://cordeliadillon.com/talks/angular.min.js"></script>
+    <script>
+        var generator = angular.module('generator', []);
+        generator.controller('GeneratorController', function($scope) {
+
+            $scope.lastIndex = -1;
+            $scope.scenarios = [
+                {  
+                    overview: "You are creating a fansite for A11yBytes!",
+                    feature: "The latest feature you'd like to implement is an online chat room so that fans can connect and learn from each other. The chat room should allow for:",
+                    requirements: ["sending images", "sharing code snippets", "(optional) read receipts"]
+                }, {
+
+                    overview: "You're contracting for the Sydney Opera House!",
+                    feature: "You're tasked with redesigning their online ticket booking system. They'd like:",
+                    requirements: [
+                        "ability for user to pick specific seat",
+                        "a timeout if user is taking more than 5 minutes to order",
+                        "music playing on the page, to give a preview of the event"
+                    ]
+                }, {
+                    overview: "You're building an app for Australia's fastest cupcake delivery service.",
+                    feature: "Cheetah Cakes is committed to delivering cupcakes in under 10 minutes, anywhere in the country. They need a robust app that can help their operators route delivery trucks to keep up with the non-stop (one might say infinitely scrolling) list of cupcake requests."
+                },
+            ];
+
+            $scope.scenario = null;
+
+            $scope.getRandomIntInclusive = function(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            $scope.generateScenario = function() {
+                var index = $scope.getRandomIntInclusive(0, $scope.scenarios.length-1);
+                if (index != $scope.lastIndex) {
+                    $scope.scenario = $scope.scenarios[index];
+                    $scope.lastIndex = index;
+                } else {
+                    $scope.generateScenario();
+                }
+            }
+
+            $scope.generateScenario();
+        });
+    </script>
+</body>
+</html>

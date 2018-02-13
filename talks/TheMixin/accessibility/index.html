@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accessibility Demo</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script>
+      var app = angular.module( 'app', [] );
+      app.controller( 'AppController', function( $scope ) {
+        // we control our app from here
+
+        $scope.reveal = function(clickTarget) {
+          $scope.revealString = "You clicked on " + clickTarget + ".";
+        }
+      });
+  </script>
+</head>
+<body ng-app="app" ng-controller="AppController">
+<h1>Some Accessibility Examples</h1>
+
+<p>Check out the <a href="https://docs.google.com/presentation/d/1_-bZnTdCAhj2TqZRjmBM3ZGSkBunS9Pq6SWZbkmwMck/edit?usp=sharing">Google slides</a> or download the <a href="http://cordeliadillon.com/talks/TheMixin/accessibility/IveBeenDoingThisWrong.pdf">PDF of slides</a> for this talk at the he Mixin on 3/11/15.</a>
+
+<div class="example">
+  <img src="images/1948194_10201725053753001_218946715_n.jpg" height="400px"/>
+
+  <pre>
+  <code class="language-html" data-lang="html">
+&lt;img src="images/1948194_10201725053753001_218946715_n.jpg" height="600px"/&gt;
+&lt;!-- BAD. What is this image?! It has no alt text! --&gt;
+  </code>
+  </pre>
+</div>
+
+<div class="example">
+
+  <img src="images/1948194_10201725053753001_218946715_n.jpg" height="400px" alt="Macaroni and cheese-themed Photobooth strip of Cordelia and Zach wearing fast food hats"/>
+
+  <pre>
+    <code class="language-html" data-lang="html">
+&lt;img src="images/1948194_10201725053753001_218946715_n.jpg" height="600px" alt="Macaroni and cheese-themed Photobooth strip of Cordelia and Zach wearing fast food hats"/&gt;
+&lt;!-- GOOD. Image with proper alt text --&gt;
+    </code>
+  </pre>
+</div>
+
+<!-- Inaccessible Hamburger Icon -->
+<div class="example">
+  <button class="menu-button">
+    <img src="images/hamburger-icon.png"/>
+  </button>
+
+  <pre>
+    <code class="language-html" data-lang="html">
+&lt;button class="menu-button"&gt;
+  &lt;img src="images/hamburger-icon.png"/&gt;
+&lt;/button&gt;
+&lt;!-- BAD. There's no text here to tell me what this button does. --&gt;
+    </code>
+  </pre>
+</div>
+
+<div class="example">
+
+  <button class="menu-button">
+    <img src="images/hamburger-icon.png" alt="Menu"/>
+  </button>
+
+  <pre>
+    <code class="language-html" data-lang="html">
+&lt;button class="menu-button"&gt;
+  &lt;img src="images/hamburger-icon.png" alt="Menu"/&gt;
+&lt;/button&gt;
+&lt;!-- GOOD. Now I know what that image represents. --&gt;
+    </code>
+  </pre>
+</div>
+
+<div class="example">
+
+  <button class="menu-button">
+    <img src="images/hamburger-icon.png" alt="Menu"/>
+    Menu
+  </button>
+
+  <pre>
+    <code class="language-html" data-lang="html">
+&lt;button class="menu-button"&gt;
+  &lt;img src="images/hamburger-icon.png" alt="Menu"/&gt;
+  Menu
+&lt;/button&gt;
+&lt;!-- MEH. The alt text here is cool, but it gives me redundant information. --&gt;
+    </code>
+  </pre>
+</div>
+
+<div class="example">
+
+  <button class="menu-button">
+    <img src="images/hamburger-icon.png" alt=""/>
+    Menu
+  </button>
+
+  <pre>
+    <code class="language-html" data-lang="html">
+&lt;button class="menu-button"&gt;
+  &lt;img src="images/hamburger-icon.png" alt=""/&gt;
+  Menu
+&lt;/button&gt;
+&lt;!-- GOOD. Alt is empty for the image, so I know it's decorative. --&gt;
+    </code>
+  </pre>
+</div>
+
+<h2>Icon Fonts</h2>
+
+<!-- Inaccessible: Icon without any text alternative-->
+<div class="example">
+  <button class="menu-button">
+    <span class="glyphicon glyphicon-menu-hamburger"></span>
+  </button>
+
+  <pre>
+    <code class="language-html" data-lang="html">
+&lt;button class="menu-button"&gt;
+  &lt;span class="glyphicon glyphicon-menu-hamburger"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;!-- BAD. There's no text here! --&gt;
+    </code>
+  </pre>
+</div>
+
+<!-- Accessible: Icon with hidden text alternative-->
+<div class="example">
+  <button class="menu-button">
+    <span class="glyphicon glyphicon-menu-hamburger"></span>
+    <span class="hidden-text">Menu</span>
+  </button>
+
+  <pre>
+    <code class="language-html" data-lang="html">
+&lt;button class="menu-button"&gt;
+  &lt;span class="glyphicon glyphicon-menu-hamburger"&gt;&lt;/span&gt;
+  &lt;span class="hidden-text"&gt;Menu&lt;/span&gt;
+&lt;/button&gt;
+&lt;!-- ALRIGHT, but could be better. Hidden text alternative! --&gt;
+    </code>
+  </pre>
+</div>
+
+<!-- BEST: Icon is aria-hidden and has hidden text alternative-->
+<div class="example">
+  <button class="menu-button">
+    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+    <span class="hidden-text">Menu</span>
+  </button>
+
+  <pre>
+    <code class="language-html" data-lang="html">
+&lt;button class="menu-button"&gt;
+  &lt;span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;span class="hidden-text"&gt;Menu&lt;/span&gt;
+&lt;/button&gt;
+&lt;!-- GOOD. Icon is aria-hidden and has hidden text alternative. --&gt;
+    </code>
+  </pre>
+
+  <pre>
+    <code data-lang="css">
+.hidden-text {
+  position: absolute;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  z-index: -1000;
+}
+    </code>
+  </pre>
+</div>
+
+<!-- Text is visible -->
+<div class="example">
+  <button class="menu-button">
+    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+    Menu
+  </button>
+
+  <pre>
+    <code class="language-html" data-lang="html">
+&lt;button class="menu-button"&gt;
+  &lt;span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"&gt;&lt;/span&gt;
+  Menu
+&lt;/button&gt;
+&lt;!-- GOOD. Icon is aria-hidden and there's visible text! --&gt;
+  </code>
+  </pre>
+</div>
+
+<h2>Buttons and Links</h2>
+
+<div>{{revealString}}</div>
+
+<div ng-click="reveal('a div')" class="button-example">Sign Up</div>
+
+<div ng-click="reveal('a div with tabindex=0')" class="button-example" tabindex="0">Sign Up</div>
+
+<a href="javascript:void(0)" ng-click="reveal('an anchor with a href')" class="button-example">Sign Up</a>
+
+<a ng-click="reveal('an anchor without a href')" class="button-example">Sign Up</a>
+
+<a ng-click="reveal('an anchor with tabindex=0 and no href')" class="button-example" tabindex="0">Sign Up</a>
+
+<button ng-click="reveal('a button')" class="button-example">Sign Up</button>
+
+</body>
+</html>

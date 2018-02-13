@@ -1,0 +1,516 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Universal Design for the Web</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/purple.css">
+        <link rel="stylesheet" href="plugin/accessibility/helper.css">
+
+        <!-- Lightning Design System -->
+        <link rel="stylesheet" href="css/salesforce-lightning-design-system--em.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- Intro -->
+                <section class="center" data-background-color="#674ea9">
+                    <h1>Universal Design for the Web</h1>
+                    <p>#A11yCampSyd &middot; 13 Sept 2017</p>
+                    <p class="fragment">Slides: http://cordeliadillon.com/talks/sydney-universal-design/</p>
+                    <div class="fragment">
+                        <span class="emoji-decorator emoji-decorator--left">🎉</span>
+                        <span class="emoji-decorator emoji-decorator--right">🎉</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>This morning</h2>
+                    <ul style="list-style-type: none">
+                        <li class="fragment"><span aria-hidden="true">📖</span> Concept definitions </li>
+                        <li class="fragment"><span aria-hidden="true">👩‍💻</span> People</li>
+                        <li class="fragment"><span aria-hidden="true">💡</span> Principles & examples</li>
+                        <li class="fragment"><span aria-hidden="true">🚰</span> <i>Break</i></li>
+                        <li class="fragment"><span aria-hidden="true">🎉</span> Design activity!</li>
+                        <li class="fragment"><span aria-hidden="true">🚽</span> <i>Break</i></li>
+                        <li class="fragment"><span aria-hidden="true">🗣</span> Present & discuss</li>
+                        <li class="fragment"><span aria-hidden="true">👋</span> Wrap-Up</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Disability</h2>
+                    <b class="fragment">Social model</b>
+                    <p class="fragment">Disability is caused by the way society is organized, not by an individual's impairment or difference</p>
+                    <p class="fragment">Disability is a mismatch between a person and their environment</p>
+                </section>
+
+                <section>
+                    <img src="images/barriers.jpg" alt="Illustration: Three snow-covered mountains and a river separate a stick figure from a laptop displaying 'the most helpful website ever.' The stick figure looks up at the tallest mountain." class="stretch"/>
+                </section>
+
+                <section>
+                    <h2>Universal design</h2>
+                    <p>
+                        <q cite="https://projects.ncsu.edu/ncsu/design/cud/about_ud/about_ud.htm">the design of products and environments to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design</q>
+                        &mdash; Ron Mace (1997)
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Universal design</h2>
+                    <q>Creating barrier-free products and environments that everyone can use</q>
+                </section>
+
+                <!-- One Size Fits All -->
+                <section class="center">
+                    <h2>"One size fits all"</h2>
+                    <span class="fragment align-right emoji">🤔</span>
+                </section>
+
+                    <section class="center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OapuLyWTvjQ?rel=0&amp;start=70" frameborder="0" allowfullscreen></iframe>
+                    </section>
+
+                    <section class="center">
+                        <span class="emoji">🛩</span>
+                    </section>
+
+                    <section class="center">
+                        <p class="align-left">
+                            <q cite="https://www.thestar.com/news/insight/2016/01/16/when-us-air-force-discovered-the-flaw-of-averages.html">
+                                If you’ve designed a cockpit to fit <b>the average pilot</b>, you’ve actually designed it to fit <b>no one</b>.
+                            </q>
+                            &mdash; Todd Rose, <a href="https://www.thestar.com/news/insight/2016/01/16/when-us-air-force-discovered-the-flaw-of-averages.html">When U.S. air force discovered the flaw of averages</a>
+                        </p>
+                    </section>
+
+                    <section class="center">
+                        <h2><i><strike>"One size fits all"</strike></i></h2>
+                        <h2><b>Flexible systems</b></h2>
+                    </section>
+
+                <!-- People -->
+                <section class="center">
+                    <h2>Who are we designing for?</h2>
+                </section>
+
+                <section class="center">
+                    <img class="plain" src="images/microsoft-see.jpg" alt="3 categories of 'See': Permanent (Blind), Temporary (Cataract), Situational (Distracted driver)" />
+                    <p><small>&mdash; <i><a href="https://www.microsoft.com/en-us/design/inclusive">Microsoft Inclusive Design</a></i></small></p>
+                </section>
+
+                <section class="center">
+                    <img class="plain" src="images/microsoft-hear.jpg" alt="3 categories of 'Hear': Permanent (Deaf), Temporary (Ear infection), Situational (Bartender)" />
+                    <p><small>&mdash; <i><a href="https://www.microsoft.com/en-us/design/inclusive">Microsoft Inclusive Design</a></i></small></p>
+                </section>
+
+                <section class="center">
+                    <img class="plain" src="images/microsoft-speak.jpg" alt="3 categories of 'Speak': Permanent (Non-Verbal), Temporary (Laryngitis), Situational (Heavy accent)" />
+                    <p><small>&mdash; <i><a href="https://www.microsoft.com/en-us/design/inclusive">Microsoft Inclusive Design</a></i></small></p>
+                </section>
+
+                <section class="center">
+                    <img class="plain" src="images/microsoft-touch.jpg" alt="3 categories of 'Touch': Permanent (One arm), Temporary (Arm injury), Situational (New parent)" />
+                    <p><small>&mdash; <i><a href="https://www.microsoft.com/en-us/design/inclusive">Microsoft Inclusive Design</a></i></small></p>
+                </section>
+
+                <section>
+                    <h2>The three A's:</h2>
+                    <p>from <i>A Web for Everyone</i></p>
+                    <ul>
+                        <li class="fragment"><b>Abilities</b> and personal characteristics</li>
+                        <li class="fragment"><b>Aptitudes</b> for using technology</li>
+                        <li class="fragment"><b>Attitudes</b> about their experiences</li>
+                    </ul>
+                    <p class="fragment">(<a href="https://www.flickr.com/photos/rosenfeldmedia/sets/72157638911360206">view the personas here</a>)</p>
+                    <p><small>&mdash; <i><a href="http://rosenfeldmedia.com/books/a-web-for-everyone/">A Web For Everyone</a></i>, Sarah Horton & Whitney Quesenbery</small></p>
+                </section>
+
+                <section class="center" data-notes="Microsoft's Inclusive Design principles: Recognize exclusion. Learn from diversity. Solve for one, extend to many.">
+                    <q class="twitter-tweet align-left" data-lang="en"><p lang="en" dir="ltr">If you have ever had a problem grasping the importance of diversity in tech and its impact on society, watch this video <a href="https://t.co/ZJ1Je1C4NW">pic.twitter.com/ZJ1Je1C4NW</a></p></q>
+                    &mdash; Chukwuemeka Afigbo (@nke_ise) <a href="https://twitter.com/nke_ise/status/897756900753891328">August 16, 2017</a>
+                </section>
+
+                <section class="center">
+                    <h2>Who are the designers?</h2>
+                </section>
+
+                <section>
+                    <h2 id="who-designs">Who designs?</h2>
+                    <textarea aria-labelledby="who-designs" rows="8" style="width: 100%">
+
+                    </textarea>
+                </section>
+
+
+                <!-- Principles of Universal Design -->
+                <section class="center">
+                    <h2>Principles of Universal Design</h2>
+                </section>
+
+                    <section>
+                        <h3>Core Principles</h3>
+                        <ul>
+                            <li>Developed in the 1990s at the <a href="https://projects.ncsu.edu/ncsu/design/cud/">Center for Universal Design</a>, NC State University</li>
+                            <li>Funded by the National Institute on Disability and Rehabilitation Research</li>
+                            <li>Spanning multiple areas (architecture, public spaces, products, digital spaces)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Core Principles</h3>
+                        <ol>
+                            <li>Equitable use</li>
+                            <li class="fragment">Flexibility in use</li>
+                            <li class="fragment">Simple and intuitive use</li>
+                            <li class="fragment">Perceptible information</li>
+                            <li class="fragment">Tolerance for error</li>
+                            <li class="fragment">Low physical effort</li>
+                            <li class="fragment">Size and space for approach and use</li>
+                        </ol>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+
+                    <section>
+                        <h3>1. Equitable use</h3>
+                        <q>The design is useful and marketable to people with diverse abilities.</q>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+                    <section>
+                        <h3>1. Equitable use</h3>
+                        <ul>
+                            <li>Provide same means of use for all users: ideally identical, at least equivalent</li>
+                            <li class="fragment">Avoid segregating or stigmatizing users</li>
+                            <li class="fragment">All users should have same privacy, security, & safety rights</li>
+                            <li class="fragment">Design something people want to use!</li>
+                        </ul>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+                    <section class="center">
+                        <img class="plain" alt="Accessibility Mode toggle button, enabled" src="images/accessibility-mode.png"/>
+                        <span class="fragment align-right emoji">🤔</span>
+                    </section>
+
+                    <section>
+                        <h3>2. Flexibility in use</h3>
+                        <q>The design accommodates a wide range of individual preferences and abilities.</q>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+                    <section>
+                        <h3>2. Flexibility in use</h3>
+                        <ul>
+                            <li>Provide choice in methods of use</li>
+                            <li class="fragment">Facilitate the user's accuracy and precision</li>
+                            <li class="fragment">Adapt to user's pace</li>
+                            <li class="fragment">Be input device agnostic*</li>
+                        </ul>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+
+                    <section class="center">
+                        <span class="emoji" aria-label="mouse/keyboard parity, multiple input devices">🖲 🖱 ⌨️ 🎙 🎧</span>
+                    </section>
+
+                    <section class="center">
+                        <img class="plain" src="images/background--click.gif" alt="Hand double-clicking mouse slowly" />
+                    </section>
+
+                    <section>
+                        <h3>3. Simple & intuitive use</h3>
+                        <q>Use of the design is easy to understand, regardless of the user's experience, knowledge, language skills, or current concentration level.</q>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+                    <section>
+                        <h3>3. Simple & intuitive use</h3>
+                        <ul>
+                            <li>Remove unnecessary complexity</li>
+                            <li class="fragment">Be consistent with user expectations</li>
+                            <li class="fragment">Be consistent with structure and hierarchy of page</li>
+                            <li class="fragment">Plan for wide range of literacy & language skills</li>
+                            <li class="fragment">Prompt and give feedback during and after user actions</li>
+                        </ul>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+
+                    <section class="center">
+                        <h4>Content is key</h4>
+                        <ul>
+                            <li>Proper heading outline</li>
+                            <li>Plain language</li>
+                            <li>Helpful link text</li>
+                            <li>Descriptive image alt text</li>
+                        </ul>
+                    </section>
+
+                    <section class="center">
+                        <a href="https://styleguide.mailchimp.com/writing-for-accessibility/">
+                            <img src="images/mailchimp.png" alt=""/>
+                            <p>styleguide.mailchimp.com/writing-for-accessibility/</p>
+                        </a>
+                    </section>
+
+                    <section class="center">
+                        <h4>Consistent navigation patterns</h4>
+                    </section>
+
+                    <section class="center">
+                        <img src="images/ipad-change-passcode.jpg" alt="Change passcode modal on iPad"/>
+                    </section>
+
+                    <section class="center">
+                        <img src="images/ipad-touch-id.jpg" alt="Touch ID modal on iPad"/>
+                    </section>
+
+                    <section class="center">
+                        <img src="images/ipad-save-contact.jpg" alt="Contact modal on iPad"/>
+                    </section>
+
+                    <section class="center">
+                        <img src="images/app-store-detail.jpg" alt="App detail modal on iPad App Store"/>
+                    </section>
+
+                    <section class="center">
+                        <h4>Consistent navigation patterns</h4>
+                        <ul>
+                            <li>Semantic HTML</li>
+                            <li>Persistent landmarks</li>
+                            <li>Consistently labelled elements</li>
+                    </section>
+
+                    <section>
+                        <h3>4. Perceptible information</h3>
+                        <q>The design communicates necessary information effectively to the user, regardless of ambient conditions or the user's sensory abilities.</q>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+                    <section>
+                        <h3>4. Perceptible information</h3>
+                        <p>Make sure essential information...
+                        <ul>
+                            <li>Is conveyed in multiple modes</li>
+                            <li class="fragment">Has good contrast</li>
+                            <li class="fragment">Is as legible as possible</li>
+                        </ul>
+                        <p>Also...</p>
+                        <ul>
+                            <li class="fragment">Differentiate elements in ways that can be described</li>
+                            <li class="fragment">Provide compatibility with AT used by people with sensory limitations</li>
+                        </ul>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+
+                    <section class="center">
+                        <img class="plain" src="images/paint-1.jpg" alt="Open blue paint can"/>
+                    </section>
+
+                    <section class="center">
+                        <img class="plain" src="images/paint-2.jpg" alt="Open blue paint can wallowing and singing 'All by myself'"/>
+                    </section>
+
+                    <section class="center">
+                        <img class="plain" src="images/paint-3.jpg" alt="Open blue paint can happy with texture, text, symbols"/>
+                    </section>
+
+                    <section class="center">
+                        <img class="plain" src="images/gmail__icons.jpg" alt="Gmail actions as icon buttons" />
+                    </section>
+                    <section class="center">
+                        <img class="plain" src="images/gmail__icons--hover.jpg" alt="Gmail actions as icon buttons, tooltip over one icon says 'Archive'" />
+                    </section>
+                    <section class="center">
+                        <img class="plain" src="images/gmail__settings.jpg" alt="Gmail Button labels toggle, with choice of Icons (selected) or Text" />
+                    </section>
+                    <section class="center">
+                        <img class="plain" src="images/gmail__settings--inverse.jpg" alt="Button labels toggle, with choice of Icons or Text (selected)" />
+                    </section>
+                    <section class="center">
+                        <img class="plain fragment" src="images/gmail__icons.jpg" alt="Gmail actions as icon buttons" />
+                        <img class="plain" src="images/gmail__text.jpg" alt="Gmail actions as text buttons" />
+                        <span class="fragment align-right emoji" style="font-size: 2.5em;">🙂</span>
+                    </section>
+
+                    <section>
+                        <h3>5. Tolerance for error</h3>
+                        <q>The design minimizes hazards and the adverse consequences of accidental or unintended actions.</q>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+                    <section>
+                        <h3>5. Tolerance for error</h3>
+                        <ul>
+                            <li>Arrange elements to minimize accidents or errors</li>
+                            <li class="fragment">Provide warnings when appropriate</li>
+                            <li class="fragment">Provide fail safe features</li>
+                            <li class="fragment">Discourage accidental actions in important flows</li>
+                        </ul>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+
+                    <section class="center">
+                        <a href="https://github.com/cordeliadillon/my-super-important-repository">
+                            <img class="plain" src="images/delete-repository.png" alt="Github button: Delete this repository"/>
+                        </a>
+                        <span class="emoji fragment">👷‍♀️👍</span>
+                    </section>
+
+                    <section class="center">
+                        <h4>Create an environment in which users feel comfortable exploring</h4>
+                    </section>
+
+                    <section>
+                        <h3>6. Low physical effort</h3>
+                        <q>The design can be used efficiently and comfortably and with a minimum of fatigue.</q>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+                    <section>
+                        <h3>6. Low physical effort</h3>
+                        <ul>
+                            <li>Avoid physical strain*</li>
+                            <li class="fragment">Use reasonable operations</li>
+                            <li class="fragment">Minimize repetitive actions</li>
+                            <li class="fragment">Minimize sustained physical effort</li>
+                        </ul>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+
+                    <section class="center">
+                        <a href="https://na22.lightning.force.com/one/one.app#/sObject/Opportunity/list?filterName=00B15000009BGpLEAW">
+                            <img src="images/opportunity-kanban.png" alt="Salesforce page showing Kanban view of Opportunities"/>
+                        </a>
+                        <span class="emoji fragment">🙋</span>
+                    </section>
+
+                    <section class="center">
+                        <img src="images/twitter.png" alt="Twitter's keyboard shortcuts" />
+                        <span class="emoji fragment">👍</span>
+                    </section>
+
+                    <section>
+                        <h3>7. Size and space for approach and use</h3>
+                        <q>Appropriate size and space is provide for approach, reach, manipulation, and use regardless of user's body size, posture, and mobility.</q>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+                    <section>
+                        <h3>7. Size and space for approach and use</h3>
+                        <ul>
+                            <li>Plan for multiple sizes of hands</li>
+                            <li class="fragment">Give enough space for AT and assistance</li>
+                        </ul>
+                        <p><small>&mdash; <i><a href="https://projects.ncsu.edu/ncsu/design/cud/about_ud/udprinciplestext.htm">NC State University, The Center for Universal Design</a></i></small></p>
+                    </section>
+
+                    <section class="center">
+                        <h3>Proximity</h3>
+                        <ul>
+                            <li class="fragment">Are key combinations in close proximity?</li>
+                            <li class="fragment">Size and placement of interactive elements
+                                <ul>
+                                    <li class="fragment">Not so close that user presses the wrong one</li>
+                                    <li class="fragment">Not so far that user has to scroll</li>
+                                    <li class="fragment">At least 44 x 44px</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                <!-- Group Discussion #1 -->
+                <section class="center">
+                    <h2>Max Burger Kiosks</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M-W1mv09yxo?rel=0&amp;showinfo=0&amp;start=42" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                <!-- Break -->
+                <section class="center">
+                    <h2>Break!</h2>
+                    <span class="emoji">🚰</span>
+                </section>
+
+                <!-- Group Activity -->
+                <section class="center">
+                    <h2>Activity time!</h2>
+                    <span class="emoji">🎉</span>
+                </section>
+
+                    <section>
+                        <h3>Initial Brainstorm (30)</h3>
+                        <ul>
+                            <li>Sort yourselves into groups of 3-5.</li>
+                            <li>Get a product brief:<br/><a href="http://cordeliadillon.com/talks/sydney-universal-design/generator/">http://cordeliadillon.com/talks/sydney-universal-design/generator/</a></li>
+                            <li><b>5 min:</b> Think up ideas individually, as many as you can. Feel free to sketch and take notes.</li>
+                            <li><b>20 min:</b> Share ideas with your group.</li>
+                            <li><b>5 min:</b> As a group, pick 2-3 ideas to iterate on.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Iteration (30)</h3>
+                        <p>Start working on wireframes or outlines of your feature sets. These can be really loose! As you work, consider:</p>
+                        <ul>
+                            <li>What assumptions are you making about your users?</li>
+                            <li>How would the personas from <i>A Web For Everyone</i> interact with your product?</li>
+                            <li>What would they find easy or confusing?</li>
+                        </ul>
+                    </section>
+
+                <!-- Break -->
+                <section class="center">
+                    <h2>Break!</h2>
+                    <span class="emoji">🚽</span>
+                </section>
+
+                <section class="center">
+                    <h2>Presentations</h2>
+                </section>
+
+
+                <!-- Resources -->
+                <section>
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><a href="https://projects.ncsu.edu/ncsu/design/cud/">Center for Universal Design</a></li>
+                        <li><i><a href="http://rosenfeldmedia.com/books/a-web-for-everyone/">A Web For Everyone</a></i></li>
+                        <li><i><a href="https://shop.smashingmagazine.com/products/inclusive-design-patterns">Inclusive Design Patterns</a></i></li>
+                        <li><a href="http://www.inclusivedesigntoolkit.com/">Inclusive Design Toolkit</a></li>
+                        <li><a href="http://www.microsoft.com/en-us/design/inclusive">Inclusive Design @ Microsoft</a></li>
+                        <li><a href="https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b">7 Things Every Designer Needs to Know about Accessibility</a></li>
+                    </ul>
+                </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                history: true,
+                transition: 'none',
+                backgroundTransition: 'none',
+                center: false,
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/accessibility/helper.js', async: true, condition: function() { return !!document.body.classList; } } 
+                ]
+            });
+        </script>
+    </body>
+</html>
