@@ -51,8 +51,7 @@ talks.controller('TalksController', function($scope) {
       title: 'Alternatives to "Ninja" and "Rockstar"',
       role: 'Author',
       date: 'March 2014',
-      href: 'http://cordeliadillon.com/tech/2014/03/alternatives-to-ninja-and-rockstar/',
-      publication: 'my abandoned tech blog'
+      href: 'https://medium.com/@cordeliadillon/alternatives-to-ninja-and-rockstar-8cc108a82c0',
     }
   ];
 
