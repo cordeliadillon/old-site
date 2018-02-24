@@ -51,6 +51,16 @@ nav a:hover, nav a:focus,
   text-decoration: none;
 }
 
+nav a[aria-current="page"] {
+  color: #000;
+}
+
+header a:focus img,
+nav a[aria-current="page"]:hover,
+nav a[aria-current="page"]:focus {
+  border-bottom: 4px solid #000;
+}
+
 .button {
   cursor: pointer;
   color: #e00000;
