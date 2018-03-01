@@ -56,7 +56,18 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
-
+    {
+      id: '032318',
+      title: 'Major Patterns for Accessible Drag and Drop',
+      eventDate: 'March 23rd',
+      eventName: 'CSUN',
+      eventHref: 'http://www.csun.edu/cod/conference/2018/sessions/index.php/',
+      location: 'San Diego',
+      themes: ['Accessibility', 'Universal Design'],
+      links: [
+        {name: 'Abstract', href: 'http://www.csun.edu/cod/conference/2018/sessions/index.php/public/presentations/view/167'}
+      ]
+    }
   ];
 
   $scope.pastTalks = [
@@ -67,7 +78,7 @@ talks.controller('TalksController', function($scope) {
       eventName: 'A11y Camp Sydney',
       eventHref: 'https://www.eventbrite.com.au/e/a11y-camp-2017-workshops-tickets-36529511753',
       location: 'Sydney',
-      themes: ['Accessibility', 'Universal Design', 'We Design']
+      themes: ['Accessibility', 'Universal Design', 'Web Design']
      },
      {
       id: '091317',
