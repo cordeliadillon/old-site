@@ -58,7 +58,7 @@ talks.controller('TalksController', function($scope) {
   $scope.upcomingTalks = [
     {
       id: '032318',
-      title: 'Major Patterns for Accessible Drag and Drop',
+      title: 'Major Patterns for Accessible Drag & Drop',
       eventDate: 'March 23rd',
       eventName: 'CSUN',
       eventHref: 'http://www.csun.edu/cod/conference/2018/sessions/index.php/',
