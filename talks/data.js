@@ -62,7 +62,7 @@ talks.controller('TalksController', function($scope) {
      {
       id: '032318',
       title: 'Major Patterns for Accessible Drag & Drop',
-      eventDate: 'March 23rd',
+      eventDate: 'March 2018',
       eventName: 'CSUN',
       eventHref: 'http://www.csun.edu/cod/conference/2018/sessions/index.php/',
       location: 'San Diego',
@@ -74,7 +74,7 @@ talks.controller('TalksController', function($scope) {
      {
       id: '091417',
       title: 'Workshop: Universal Design for the Web',
-      eventDate: 'September 14th',
+      eventDate: 'September 2017',
       eventName: 'A11y Camp Sydney',
       eventHref: 'https://www.eventbrite.com.au/e/a11y-camp-2017-workshops-tickets-36529511753',
       location: 'Sydney',
@@ -83,7 +83,7 @@ talks.controller('TalksController', function($scope) {
      {
       id: '091317',
       title: 'The Great Accessibility Bake Off',
-      eventDate: 'September 13th',
+      eventDate: 'September 2017',
       eventName: 'A11y Camp Sydney',
       eventHref: 'http://a11ybytes.org/a11y-camp-schedule/',
       location: 'Sydney',
