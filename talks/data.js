@@ -56,7 +56,10 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
-    {
+  ];
+
+  $scope.pastTalks = [
+     {
       id: '032318',
       title: 'Major Patterns for Accessible Drag & Drop',
       eventDate: 'March 23rd',
@@ -67,10 +70,7 @@ talks.controller('TalksController', function($scope) {
       links: [
         {name: 'Abstract', href: 'http://www.csun.edu/cod/conference/2018/sessions/index.php/public/presentations/view/167'}
       ]
-    }
-  ];
-
-  $scope.pastTalks = [
+     },
      {
       id: '091417',
       title: 'Workshop: Universal Design for the Web',
