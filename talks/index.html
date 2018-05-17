@@ -30,6 +30,7 @@
 
     <main class="mw8 center pv3 ph4 lh-copy" ng-app="talks" ng-controller="TalksController">
       <div class="cf">
+
         <section class="fr w-100 w-50-ns pl4-ns ng-cloak" ng-cloak>
           <h2 class="f3 mb0">Upcoming Talks</h2>
           <p ng-if="upcomingTalks.length == 0">
@@ -88,27 +89,39 @@
           <img class="w-100" src="public-speaking.jpg" alt="Illustration of Cordelia pointing at a projector screen that says, 'Public Speaking'" />
           
           <h2 class="mt0">Contact Me</h2>
-          <p>I love doing tech talks on accessibility, digital literacy, and the intersection of comics and inclusive design. Want me to speak at your conference or to your team? Send a message to <b>cordelia</b> at <b>cordeliadillon</b> dot <b>com</b> and I'll get back to you as soon as I can.</p>
+          <p>I love doing tech talks on accessibility, digital literacy, and the intersection of comics and inclusive design. Want me to speak at your conference or meetup? Send a message to <strong>cordelia</strong> at <strong>cordeliadillon</strong> dot <strong>com</strong> and I'll get back to you as soon as I can.</p>
 
+    	    <div class="ng-cloak" ng-cloak>
+    	      <h2 class="mt4">Articles, etc.</h2>
+    	      <p class="mb0">Sometimes I write or otherwise contribute to articles and blog posts. Here are some from recent years:</p>
+    	      <ul class="list pa0 ma0 cf">
+    	        <li ng-repeat="post in features">
+    	          <h3 class="mb0">
+    	            <a ng-if="post.href" href="{{post.href}}">{{post.title}}</a>
+    	          </h3>
+    	          <p class="mv0">
+    	            {{post.date}} &middot; {{post.role}} <span ng-if="post.publication">&middot;  {{post.publication}}</span>
+    	          </p>
+    	        </li>
+    	      </ul>
+    	    </div>
 
-	   <div class="ng-cloak" ng-cloak>
-	       <h2 class="mt4">Publications</h2>
-	       <p class="mb0">I occasionally write and/or draw things for publications! Here are a few blog posts and articles from the past years:</p>
-	       <ul class="list pa0 ma0 cf">
-	         <li ng-repeat="post in features">
-	           <h3 class="mb0">
-	             <a ng-if="post.href" href="{{post.href}}">{{post.title}}</a>
-	           </h3>
-	           <p class="mv0">
-	             {{post.date}} &middot; {{post.role}} <span ng-if="post.publication">&middot;  {{post.publication}}</span>
-	           </p>
-	         </li>
-	       </ul>
-	 </div>
+          <div class="ng-cloak" ng-cloak>
+            <h2 class="mt4">Interviews</h2>
+            <ul class="list pa0 ma0 cf">
+              <li ng-repeat="interview in interviews">
+                <h3 class="mb0">
+                  <a ng-if="interview.href" href="{{interview.href}}">{{interview.title}}</a>
+                </h3>
+                <p class="mv0">
+                  {{interview.date}} <span ng-if="interview.publication">&middot;  {{interview.publication}}</span>
+                </p>
+              </li>
+            </ul>
+          </div>
 
           <!--
           <h2>Need a bio?</h2>
-          <p>Cordelia McGee-Tubb is a developer, designer, and cartoonist focused on making the web better for everyone. She is a currently working on web accessibility at Dropbox. An advocate for digital literacy, Cordelia teaches basic computer and internet skills to senior citizens. In her spare time, she draws autobiographical comics and collects hats shaped like food.</p>
 
           <h2>Need a photo?</h2>
           <p>My preferred avatar is this illustrated self portrait:</p>

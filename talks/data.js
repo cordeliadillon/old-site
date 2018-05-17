@@ -7,6 +7,14 @@ talks.controller('TalksController', function($scope) {
   
   $scope.features = [
     {
+      id: 'dnd',
+      title: '4 Major Patterns for Accessible Drag & Drop',
+      role: 'Code samples',
+      publication: 'Salesforce UX Tech Blog',
+      date: 'November 2017',
+      href: 'https://medium.com/salesforce-ux/4-major-patterns-for-accessible-drag-and-drop-1d43f64ebf09',
+    },
+    {
       id: 'db',
       title: 'Creating a culture of accessibility',
       role: 'Author',
@@ -14,14 +22,6 @@ talks.controller('TalksController', function($scope) {
       date: 'April  2017',
       href: 'https://blogs.dropbox.com/tech/2017/04/creating-a-culture-of-accessibility/',
     },
-    /*{
-      id: 'fin',
-      title: 'Interview',
-      role: 'Interviewee',
-      publication: 'Finlands Synskadade',
-      date: 'April 2017',
-      href: 'https://www.fss.fi/sv/finlands-synskadade-nummer-4-2017'
-    },*/
     {
       id: 'net magazine',
       title: 'Using onclick wisely',
@@ -55,7 +55,41 @@ talks.controller('TalksController', function($scope) {
     }
   ];
 
+  $scope.interviews = [
+    {
+      id: 'fin',
+      title: 'Webbsidor \u00E4r egentligen serieteckningar',
+      publication: 'Finlands Synskadade',
+      date: 'April 2017',
+      href: 'https://www.fss.fi/sv/finlands-synskadade-nummer-4-2017'
+    },
+    {
+      id: 'she',
+      title: 'she++ TechStories()',
+      publication: 'she++',
+      date: 'March 2014',
+      href: 'https://www.youtube.com/watch?v=VAUCavMFswY'
+    },
+    {
+      id: 'ctn',
+      title: 'Volunteer Spotlight',
+      publication: 'Community Technology Network',
+      date: 'August 2013',
+      href: 'https://www.communitytechnetwork.org/blog/volunteer-spotlight-cordelia-mcgee-tubb/'
+    },
+  ];
+
   $scope.upcomingTalks = [
+    {
+      id: '1018',
+      title: 'TBD',
+      eventDate: 'October 2018',
+      eventName: '#a11yTO',
+      eventHref: 'http://conf.a11yto.com/',
+      location: 'Toronto',
+      themes: ['Stay tuned!'],
+      links: []
+    }
   ];
 
   $scope.pastTalks = [
@@ -68,7 +102,8 @@ talks.controller('TalksController', function($scope) {
       location: 'San Diego',
       themes: ['Accessibility', 'Universal Design'],
       links: [
-        {name: 'Abstract', href: 'http://www.csun.edu/cod/conference/2018/sessions/index.php/public/presentations/view/167'}
+        {name: 'Abstract', href: 'http://www.csun.edu/cod/conference/2018/sessions/index.php/public/presentations/view/167'},
+        {name: 'Slideshare', href: 'https://www.slideshare.net/JesseHausler/major-patterns-for-accessible-drag-and-drop'}
       ]
      },
      {
