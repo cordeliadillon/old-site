@@ -107,6 +107,24 @@ talks.controller('TalksController', function($scope) {
       ]
      },
      {
+      id: '102117',
+      title: 'Panel: Secret sauce of successful accessibility squads',
+      eventDate: 'October 2017',
+      eventName: 'Accessibility Camp Bay Area',
+      eventHref: 'http://www.accessibilitycampbay.org/2017talks.php',
+      location: 'San Francisco',
+      themes: ['Panel Moderator', 'Accessibility', 'Process']
+     },
+     {
+      id: '092117',
+      title: 'Panel: Secret sauce of successful accessibility squads',
+      eventDate: 'September 2017',
+      eventName: 'Bay Area Accessibility and Inclusive Design Meetup',
+      eventHref: 'https://www.meetup.com/a11ybay/events/243136425/',
+      location: 'San Francisco',
+      themes: ['Panel Moderator', 'Accessibility', 'Process']
+     },
+     {
       id: '091417',
       title: 'Workshop: Universal Design for the Web',
       eventDate: 'September 2017',
