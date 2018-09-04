@@ -84,7 +84,7 @@ talks.controller('TalksController', function($scope) {
       id: '092518',
       title: 'World Interaction Design Day',
       eventDate: 'September 25, 2018',
-      eventName: 'IXDD'
+      eventName: 'IXDD',
       eventHref: 'https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800',
       location: 'San Francisco'
     },
