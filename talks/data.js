@@ -82,23 +82,26 @@ talks.controller('TalksController', function($scope) {
   $scope.upcomingTalks = [
     {
       id: '092518',
-      title: 'World Interaction Design Day',
+      title: 'Adobe Systems and IxDASF present: Inclusive Design in Practice',
       eventDate: 'September 25, 2018',
-      eventName: 'IXDD',
+      eventName: 'World Interaction Design Day',
       eventHref: 'https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800',
       location: 'San Francisco',
-      themes: [],
-      links: []
+      themes: ['Inclusive Design', 'Universal Design'],
+      links: [
+        {name: 'Register', href: 'https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800'}]
     },
     {
       id: '1018',
-      title: 'TBD',
+      title: 'TBA, a hopefully very interesting talk on a topic that is dear to my heart',
       eventDate: 'October 2018',
       eventName: '#a11yTO',
       eventHref: 'http://conf.a11yto.com/',
       location: 'Toronto',
       themes: ['Stay tuned!'],
-      links: []
+      links: [
+        {name: 'Register', href: 'https://a11ytoconf2018.eventbrite.ca/'}
+      ]
     }
   ];
 
