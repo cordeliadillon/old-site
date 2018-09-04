@@ -86,7 +86,9 @@ talks.controller('TalksController', function($scope) {
       eventDate: 'September 25, 2018',
       eventName: 'IXDD',
       eventHref: 'https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800',
-      location: 'San Francisco'
+      location: 'San Francisco',
+      themes: [],
+      links: []
     },
     {
       id: '1018',
