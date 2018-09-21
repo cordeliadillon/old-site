@@ -93,12 +93,12 @@ talks.controller('TalksController', function($scope) {
     },
     {
       id: '1018',
-      title: 'TBA, a hopefully very interesting talk on a topic that is dear to my heart',
+      title: 'Everything I learned about interaction design I learned in the senior center computer lab',
       eventDate: 'October 2018',
       eventName: '#a11yTO',
-      eventHref: 'http://conf.a11yto.com/',
+      eventHref: 'http://conf.a11yto.com/talks#everything-i-learned-about-interaction-design',
       location: 'Toronto',
-      themes: ['Stay tuned!'],
+      themes: ['Universal Design', 'User Experience'],
       links: [
         {name: 'Register', href: 'https://a11ytoconf2018.eventbrite.ca/'}
       ]
