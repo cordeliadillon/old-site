@@ -81,17 +81,6 @@ talks.controller('TalksController', function($scope) {
 
   $scope.upcomingTalks = [
     {
-      id: '092518',
-      title: 'Adobe Systems and IxDASF present: Inclusive Design in Practice',
-      eventDate: 'September 25, 2018',
-      eventName: 'World Interaction Design Day',
-      eventHref: 'https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800',
-      location: 'San Francisco',
-      themes: ['Inclusive Design', 'Universal Design'],
-      links: [
-        {name: 'Register', href: 'https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800'}]
-    },
-    {
       id: '1018',
       title: 'Everything I learned about interaction design I learned in the senior center computer lab',
       eventDate: 'October 2018',
@@ -106,6 +95,17 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.pastTalks = [
+     {
+      id: '092518',
+      title: 'Inclusive Design in Practice',
+      eventDate: 'September 25, 2018',
+      eventName: 'World Interaction Design Day',
+      eventHref: 'https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800',
+      location: 'San Francisco',
+      themes: ['Inclusive Design', 'Universal Design'],
+      links: [
+        {name: 'Event', href: 'https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800'}]
+     },
      {
       id: '032318',
       title: 'Major Patterns for Accessible Drag & Drop',
