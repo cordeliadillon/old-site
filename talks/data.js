@@ -80,7 +80,11 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
-    {
+
+  ];
+
+  $scope.pastTalks = [
+     {
       id: '1018',
       title: 'Everything I learned about interaction design I learned in the senior center computer lab',
       eventDate: 'October 2018',
@@ -88,17 +92,11 @@ talks.controller('TalksController', function($scope) {
       eventHref: 'http://conf.a11yto.com/talks#everything-i-learned-about-interaction-design',
       location: 'Toronto',
       themes: ['Universal Design', 'User Experience'],
-      links: [
-        {name: 'Register', href: 'https://a11ytoconf2018.eventbrite.ca/'}
-      ]
-    }
-  ];
-
-  $scope.pastTalks = [
+     },
      {
       id: '092518',
       title: 'Inclusive Design in Practice',
-      eventDate: 'September 25, 2018',
+      eventDate: 'September 2018',
       eventName: 'World Interaction Design Day',
       eventHref: 'https://www.eventbrite.com/e/inclusive-design-in-practice-tickets-48506684800',
       location: 'San Francisco',
