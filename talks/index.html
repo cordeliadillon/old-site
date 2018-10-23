@@ -46,11 +46,9 @@
               </p>
               <p class="mv0">{{talk.blurb}}</p>
               <p ng-if="talk.themeString" class="mv0">
-               <!--  <b>Themes:</b>  -->
                 {{talk.themeString}}
               </p>
               <p ng-if="talk.links" class="mv0">
-                <!-- <b>Themes:</b> -->
                 <span ng-repeat="link in talk.links">
                   <span class="ph1 b" ng-if="$index != 0">&middot;</span>
                   <a href="{{link.href}}" aria-describedby="{{talk.id}}">{{link.name}}</a>
@@ -70,11 +68,9 @@
               </p>
               <p class="mv0">{{talk.blurb}}</p>
               <p ng-if="talk.themeString" class="mv0">
-               <!--  <b>Themes:</b>  -->
                 {{talk.themeString}}
               </p>
               <p ng-if="talk.links" class="mv0">
-                <!-- <b>Themes:</b> -->
                 <span ng-repeat="link in talk.links">
                   <span class="ph1 b" ng-if="$index != 0">&middot;</span>
                   <a href="{{link.href}}" aria-describedby="{{talk.id}}">{{link.name}}</a>

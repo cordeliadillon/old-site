@@ -88,7 +88,7 @@ talks.controller('TalksController', function($scope) {
       id: '1018',
       title: 'Everything I learned about interaction design I learned in the senior center computer lab',
       eventDate: 'October 2018',
-      eventName: '#a11yTO',
+      eventName: '#a11yTOConf',
       eventHref: 'http://conf.a11yto.com/talks#everything-i-learned-about-interaction-design',
       location: 'Toronto',
       themes: ['Universal Design', 'User Experience'],
