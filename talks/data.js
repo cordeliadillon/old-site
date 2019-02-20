@@ -80,7 +80,15 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
-
+    {
+      id: '0219',
+      title: 'Lightning Talk',
+      eventDate: 'February 23rd, 2019',
+      eventName: 'World IA Day 2019',
+      eventHref: 'https://generalassemb.ly/education/world-ia-day-2019-design-for-difference/san-francisco/69704',
+      location: 'San Francisco',
+      themes: ['Universal Design', 'User Experience'],
+     },
   ];
 
   $scope.pastTalks = [
