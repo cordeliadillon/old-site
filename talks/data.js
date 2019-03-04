@@ -263,7 +263,7 @@ talks.controller('TalksController', function($scope) {
       links: [
         {name: 'Abstract', href: 'http://lanyrd.com/2016/clarityconf/sdxwbc/'},
         {name: 'Recap', href: 'http://bradfrost.com/blog/post/clarity-conf-baking-accessibility-in/'},
-        {name: 'Tweets', href: 'https://storify.com/cordeliadillon/baking-accessibility-in-clarity-conference'},
+        /*{name: 'Tweets', href: 'https://storify.com/cordeliadillon/baking-accessibility-in-clarity-conference'},*/
         {name: 'Video', href: 'https://www.sitepoint.com/premium/courses/clarity-conference-2016-2925'}
       ]
     },
@@ -308,12 +308,12 @@ talks.controller('TalksController', function($scope) {
     },
     {
       id: '040914',
-      title: 'UX Ignite',
+      title: 'Lightning Talk',
       eventDate: 'April 2014',
-      eventName: 'Salesforce UX Internal',
+      eventName: 'Salesforce UX Ignite (Internal)',
       themes: ['Senior Citizens', 'User Experience'],
       links: [
-        {name: 'Photos', href: 'http://propergems.com/ignite'}
+        {name: 'Photos', href: 'https://propergems.com/ignite/'}
       ]
     }
   ];
