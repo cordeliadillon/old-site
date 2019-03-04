@@ -80,7 +80,20 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
-    {
+
+  ];
+
+  $scope.pastTalks = [
+     {
+      id: '0302',
+      title: 'Panel: Rise Up, Reach Back',
+      eventDate: 'March 2nd, 2019',
+      eventName: 'Women Techmakers 2019',
+      eventHref: 'https://www.womentechmakers.com/iwd19/google-mountain-view-19',
+      location: 'Mountain View',
+      themes: ['Accessibility', 'Mentorship & Sponsorship', 'Women in Tech'],
+     },
+     {
       id: '0219',
       title: 'Lightning Talk',
       eventDate: 'February 23rd, 2019',
@@ -89,9 +102,6 @@ talks.controller('TalksController', function($scope) {
       location: 'San Francisco',
       themes: ['Universal Design', 'User Experience'],
      },
-  ];
-
-  $scope.pastTalks = [
      {
       id: '1018',
       title: 'Everything I learned about interaction design I learned in the senior center computer lab',
