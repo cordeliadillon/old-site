@@ -92,6 +92,9 @@ talks.controller('TalksController', function($scope) {
       eventHref: 'https://www.womentechmakers.com/iwd19/google-mountain-view-19',
       location: 'Mountain View',
       themes: ['Accessibility', 'Mentorship & Sponsorship', 'Women in Tech'],
+      links: [
+        {name: 'Video', href: 'https://www.youtube.com/watch?v=LFq-a2UAYDc'}
+      ]
      },
      {
       id: '0219',
@@ -217,7 +220,10 @@ talks.controller('TalksController', function($scope) {
       eventName: 'Funka Accessibility Days',
       eventHref: 'http://www.funka.com/en/we-offer/funka-accessibility-days/program/',
       location: 'Stockholm',
-      themes: ['Accessibility', 'Universal Design', 'Comics', 'Illustration']
+      themes: ['Accessibility', 'Universal Design', 'Comics', 'Illustration'],
+      links: [
+        {name: 'Slides (PDF)', href: 'https://www.funka.com/contentassets/fb009556bdd7475b957f99cf8600c674/illustrating-the-point-cordelia.pdf'}
+      ]
     },
 
     {
@@ -275,7 +281,7 @@ talks.controller('TalksController', function($scope) {
       eventHref: 'http://themixin.eventbrite.com',
       themes: ['Accessibility', 'Web Development', 'User Experience'],
       links: [
-        {name: 'Slides PDF', href: 'http://cordeliadillon.com/talks/TheMixin/accessibility/IveBeenDoingThisWrong.pdf'},
+        {name: 'Slides (PDF)', href: 'http://cordeliadillon.com/talks/TheMixin/accessibility/IveBeenDoingThisWrong.pdf'},
         {name: 'Google Slides', href: 'https://docs.google.com/presentation/d/1_-bZnTdCAhj2TqZRjmBM3ZGSkBunS9Pq6SWZbkmwMck/edit'},
         {name: 'Examples', href: 'http://www.cordeliadillon.com/talks/TheMixin/accessibility'}
       ]
@@ -291,7 +297,7 @@ talks.controller('TalksController', function($scope) {
       links: [
         {name: 'Abstract', href: 'http://www.csun.edu/cod/conference/2015/sessions/index.php/public/presentations/view/190'},
         {name: 'SlideShare', href: 'http://www.slideshare.net/cordeliadillon/accessibility-inanagileworld-csun2015'},
-        {name: 'Slides PDF', href: 'http://www.cordeliadillon.com/talks/CSUN2015/AccessibilityInAnAgileWorld-CSUN15.pdf'}
+        {name: 'Slides (PDF)', href: 'http://www.cordeliadillon.com/talks/CSUN2015/AccessibilityInAnAgileWorld-CSUN15.pdf'}
       ]
     },
     {
