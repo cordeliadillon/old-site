@@ -85,6 +85,14 @@ talks.controller('TalksController', function($scope) {
 
   $scope.pastTalks = [
      {
+      id: '040519',
+      title: 'Episode 29 - Accessibility in Comics',
+      eventDate: 'April 5th, 2019',
+      eventName: 'Pop Whiz Bang! Podcast',
+      eventHref: 'https://soundcloud.com/pwbpod/popwhizbang-episode-29-accessbility-in-comics',
+      themes: ['Accessibility', 'Comics'],
+     },
+     {
       id: '0302',
       title: 'Panel: Rise Up, Reach Back',
       eventDate: 'March 2nd, 2019',
