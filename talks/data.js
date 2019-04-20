@@ -85,12 +85,28 @@ talks.controller('TalksController', function($scope) {
 
   $scope.pastTalks = [
      {
+      id: '041219',
+      title: 'Episode 29 - El Deafo',
+      eventDate: 'April 12th, 2019',
+      eventName: 'Pop Whiz Bang! Podcast',
+      eventHref: 'https://soundcloud.com/pwbpod/popwhizbang-episode-30-el-deafo',
+      themes: ['Accessibility', 'Comics'],
+      links: [
+        {name: 'Audio', href: 'https://soundcloud.com/pwbpod/popwhizbang-episode-30-el-deafo'},
+        {name: 'Transcript', href: 'https://cordeliadillon.github.io/transcripts/Pop_Whiz_Bang__Episode-30'}
+      ]
+     },
+     {
       id: '040519',
       title: 'Episode 29 - Accessibility in Comics',
       eventDate: 'April 5th, 2019',
       eventName: 'Pop Whiz Bang! Podcast',
       eventHref: 'https://soundcloud.com/pwbpod/popwhizbang-episode-29-accessbility-in-comics',
       themes: ['Accessibility', 'Comics'],
+      links: [
+        {name: 'Audio', href: 'https://soundcloud.com/pwbpod/popwhizbang-episode-29-accessbility-in-comics'},
+        {name: 'Transcript', href: 'https://cordeliadillon.github.io/transcripts/Pop_Whiz_Bang__Episode-29'}
+      ]
      },
      {
       id: '0302',
