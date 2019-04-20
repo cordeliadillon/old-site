@@ -86,7 +86,7 @@ talks.controller('TalksController', function($scope) {
   $scope.pastTalks = [
      {
       id: '041219',
-      title: 'Episode 29 - El Deafo',
+      title: 'Episode 30 - El Deafo',
       eventDate: 'April 12th, 2019',
       eventName: 'Pop Whiz Bang! Podcast',
       eventHref: 'https://soundcloud.com/pwbpod/popwhizbang-episode-30-el-deafo',
