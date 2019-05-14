@@ -85,6 +85,14 @@ talks.controller('TalksController', function($scope) {
 
   $scope.pastTalks = [
      {
+       id: '051420',
+       title: 'Panel: How the Giants of Tech are making accessibility a mainstream issue',
+       eventDate: 'May 14th, 2019',
+       eventName: 'Benchmarking Digital Inclusion to Drive a Better Digital World',
+       eventHref: 'https://www.eventbrite.com/e/benchmarking-digital-inclusion-to-drive-a-better-digital-world-registration-58851121288#',
+       themes: ['Accessibility', 'Process', 'Salesforce'],
+     },
+     {
       id: '041219',
       title: 'Episode 30 - El Deafo',
       eventDate: 'April 12th, 2019',
