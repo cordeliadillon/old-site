@@ -80,7 +80,14 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
-
+     {
+       id: '051420',
+       title: '(I\'m stoked to be cohosting this conf!)',
+       eventDate: 'October 24-25, 2019',
+       eventName: '#a11yTOConf',
+       eventHref: 'https://conf.a11yto.com/',
+       themes: ['Accessibility'],
+     },
   ];
 
   $scope.pastTalks = [
