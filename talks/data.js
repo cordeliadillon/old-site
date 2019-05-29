@@ -98,6 +98,9 @@ talks.controller('TalksController', function($scope) {
        eventName: 'Benchmarking Digital Inclusion to Drive a Better Digital World',
        eventHref: 'https://www.eventbrite.com/e/benchmarking-digital-inclusion-to-drive-a-better-digital-world-registration-58851121288#',
        themes: ['Accessibility', 'Process', 'Salesforce'],
+       links: [
+         {name: 'Video', href: 'https://embed.vidyard.com/share/8dWsVEZkRTdtYkLELF81FS'}
+       ]
      },
      {
       id: '041219',
