@@ -80,17 +80,17 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
+  ];
+
+  $scope.pastTalks = [
      {
        id: '051420',
        title: 'Co-hosting with Eric Bailey',
-       eventDate: 'October 24-25, 2019',
+       eventDate: 'October 24-25th, 2019',
        eventName: '#a11yTOConf',
        eventHref: 'https://conf.a11yto.com/',
        themes: ['Accessibility'],
      },
-  ];
-
-  $scope.pastTalks = [
      {
        id: '051420',
        title: 'Panel: How the Giants of Tech are making accessibility a mainstream issue',
