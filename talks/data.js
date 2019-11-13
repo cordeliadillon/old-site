@@ -80,11 +80,20 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
+      {
+       id: '112019',
+       title: 'Keyboard Navigation: Where Productivity Meets Accessibility',
+       eventDate: 'November 20th, 2019',
+       eventName: 'Dreamforce',
+       eventHref: 'https://www.salesforce.com/dreamforce/',
+       themes: ['Accessibility', 'Productivity', 'Salesforce'],
+       links: [{name: 'Abstract', href: 'https://success.salesforce.com/sessions?eventId=a1Q3A000021ea1UUAQ#/session/a2q3A000002BJNgQAO'}]
+     },
   ];
 
   $scope.pastTalks = [
      {
-       id: '051420',
+       id: '102419',
        title: 'Co-hosting with Eric Bailey',
        eventDate: 'October 24-25th, 2019',
        eventName: '#a11yTOConf',
@@ -92,7 +101,7 @@ talks.controller('TalksController', function($scope) {
        themes: ['Accessibility'],
      },
      {
-       id: '051420',
+       id: '051419',
        title: 'Panel: How the Giants of Tech are making accessibility a mainstream issue',
        eventDate: 'May 14th, 2019',
        eventName: 'Benchmarking Digital Inclusion to Drive a Better Digital World',
