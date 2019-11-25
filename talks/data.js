@@ -80,7 +80,10 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
-      {
+  ];
+
+  $scope.pastTalks = [
+     {
        id: '112019',
        title: 'Keyboard Navigation: Where Productivity Meets Accessibility',
        eventDate: 'November 20th, 2019',
@@ -89,9 +92,6 @@ talks.controller('TalksController', function($scope) {
        themes: ['Accessibility', 'Productivity', 'Salesforce'],
        links: [{name: 'Abstract', href: 'https://success.salesforce.com/sessions?eventId=a1Q3A000021ea1UUAQ#/session/a2q3A000002BJNgQAO'}]
      },
-  ];
-
-  $scope.pastTalks = [
      {
        id: '102419',
        title: 'Co-hosting with Eric Bailey',
