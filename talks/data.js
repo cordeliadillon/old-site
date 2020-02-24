@@ -7,6 +7,14 @@ talks.controller('TalksController', function($scope) {
   
   $scope.features = [
     {
+      id: '24',
+      title: 'Building an accessible bingo web app',
+      role: 'Author',
+      publication: '24 Accessibility',
+      date: 'December 2019',
+      href: 'https://www.24a11y.com/2019/building-an-accessible-bingo-web-app/'
+    },
+    {
       id: 'dnd',
       title: '4 Major Patterns for Accessible Drag & Drop',
       role: 'Code samples',
