@@ -88,6 +88,14 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
+    {
+      id: '042820',
+      title: 'AXSChat',
+      eventDate: 'April 28th, 2020',
+      eventName: 'AXSChat',
+      eventHref: 'https://www.axschat.com/upcoming-events/',
+      themes: ['Accessibility']
+    }
   ];
 
   $scope.pastTalks = [
