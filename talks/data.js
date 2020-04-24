@@ -95,7 +95,16 @@ talks.controller('TalksController', function($scope) {
       eventName: 'AXSChat',
       eventHref: 'https://www.axschat.com/upcoming-events/',
       themes: ['Accessibility']
-    }
+    },
+    {
+      id: '042920',
+      title: 'Panel: Journeys into Digital Accessibility',
+      eventDate: 'April 29th, 2020',
+      eventName: 'Bay Area Accessibility and Inclusive Design Meetup',
+      eventHref: 'https://www.meetup.com/a11ybay/events/270204474/',
+      themes: ['Accessibility']
+    },
+
   ];
 
   $scope.pastTalks = [
