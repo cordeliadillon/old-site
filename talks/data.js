@@ -89,14 +89,6 @@ talks.controller('TalksController', function($scope) {
 
   $scope.upcomingTalks = [
     {
-      id: '042820',
-      title: 'AXSChat',
-      eventDate: 'April 28th, 2020',
-      eventName: 'AXSChat',
-      eventHref: 'https://www.axschat.com/upcoming-events/',
-      themes: ['Accessibility']
-    },
-    {
       id: '042920',
       title: 'Panel: Journeys into Digital Accessibility',
       eventDate: 'April 29th, 2020',
@@ -108,7 +100,19 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.pastTalks = [
-     {
+    {
+      id: '042820',
+      title: 'AXSChat',
+      eventDate: 'April 28th, 2020',
+      eventName: 'AXSChat',
+      eventHref: 'https://www.axschat.com/cordelia-mcgee-tubb/',
+      themes: ['Accessibility'],
+      links: [
+        {name: '#AXSChat Twitter Discussion', href: 'https://twitter.com/search?q=(%23AXSChat)%20until%3A2020-04-29%20since%3A2020-04-27&src=typed_query'},
+        {name: 'Interview', href: 'https://www.axschat.com/cordelia-mcgee-tubb/'}
+      ]
+    },
+    {
        id: '112019',
        title: 'Keyboard Navigation: Where Productivity Meets Accessibility',
        eventDate: 'November 20th, 2019',
