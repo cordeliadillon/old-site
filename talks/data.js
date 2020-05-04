@@ -88,7 +88,11 @@ talks.controller('TalksController', function($scope) {
   ];
 
   $scope.upcomingTalks = [
-    {
+
+  ];
+
+  $scope.pastTalks = [
+     {
       id: '042920',
       title: 'Panel: Journeys into Digital Accessibility',
       eventDate: 'April 29th, 2020',
@@ -96,10 +100,6 @@ talks.controller('TalksController', function($scope) {
       eventHref: 'https://www.meetup.com/a11ybay/events/270204474/',
       themes: ['Accessibility']
     },
-
-  ];
-
-  $scope.pastTalks = [
     {
       id: '042820',
       title: 'AXSChat',
