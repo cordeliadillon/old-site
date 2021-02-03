@@ -7,6 +7,13 @@ talks.controller('TalksController', function($scope) {
   
   $scope.features = [
     {
+      id: 'worry',
+      title: 'When you find your worry twin',
+      role: 'Co-Author',
+      date: 'February 2021',
+      href: 'https://cordeliadillon.medium.com/when-you-find-your-worry-twin-b7021ef342b8'
+    },
+    {
       id: '24',
       title: 'Building an accessible bingo web app',
       role: 'Author',
